@@ -5,6 +5,8 @@ metadata:
   name: vote-dev
   namespace: flux-system
 spec:
+  dependsOn:
+  - name: redis-dev
   healthChecks:
   - kind: Deployment
     name: vote
@@ -15,4 +17,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: instavote
+  targetNamespace: instavote
   timeout: 2m0s
