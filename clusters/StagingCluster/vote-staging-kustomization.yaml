@@ -17,4 +17,3 @@ spec:
     name: instavote
   targetNamespace: instavote
   timeout: 2m0s
-  validation: client
