@@ -5,8 +5,9 @@ metadata:
   name: instavote
   namespace: flux-system
 spec:
-  interval: 30s
+  gitImplementation: go-git
+  interval: 1m
   ref:
     branch: main
-  timeout: 1m0s
+  timeout: 20s
   url: https://github.com/Habibul786/instavote.git
