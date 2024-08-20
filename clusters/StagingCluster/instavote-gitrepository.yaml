@@ -8,5 +8,5 @@ spec:
   interval: 1m
   ref:
     branch: main
-  timeout: 20s
+  timeout: 30s
   url: https://github.com/Habibul786/instavote.git
