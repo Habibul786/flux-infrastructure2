@@ -1,0 +1,4 @@
+service:
+  name: helmrelease-db
+settings:
+  authMethod: trust
