@@ -9,7 +9,7 @@ spec:
   - kind: Deployment
     name: worker
     namespace: instavote
-  interval: 1h
+  interval: 30s
   path: ./deploy/worker/staging
   prune: true
   sourceRef:
