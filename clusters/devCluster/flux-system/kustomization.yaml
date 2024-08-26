@@ -4,4 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 patches:
-- path: expose-webhook-receiver.yaml
+- expose-webhook-receiver.yaml
