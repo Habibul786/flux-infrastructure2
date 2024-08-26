@@ -7,11 +7,14 @@ metadata:
 spec:
   healthChecks:
   - kind: Deployment
-    name: prometheus
-    namespace: flux-system
+    name: kube-prometheus-stack-grafana
+    namespace: monitoring
   - kind: Deployment
-    name: grafana
-    namespace: flux-system
+    name: kube-prometheus-stack-kube-state-metrics
+    namespace: monitoring
+  - kind: Deployment
+    name: kube-prometheus-stack-operator
+    namespace: monitoring
   interval: 1h0m0s
   path: ./monitoring/controllers
   prune: true
