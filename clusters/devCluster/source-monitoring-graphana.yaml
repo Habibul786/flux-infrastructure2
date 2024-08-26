@@ -2,10 +2,14 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
+  labels:
+    kustomize.toolkit.fluxcd.io/name: flux-system
+    kustomize.toolkit.fluxcd.io/namespace: flux-system
   name: monitoring-habibul
   namespace: flux-system
 spec:
   interval: 30m0s
   ref:
     branch: main
+  timeout: 1m0s
   url: https://github.com/Habibul786/flux2-monitoring-example

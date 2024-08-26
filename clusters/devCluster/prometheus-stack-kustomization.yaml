@@ -5,9 +5,17 @@ metadata:
   name: kustomize-monitoring
   namespace: flux-system
 spec:
+  healthChecks:
+  - kind: Deployment
+    name: prometheus
+    namespace: flux-system
+  - kind: Deployment
+    name: grafana
+    namespace: flux-system
   interval: 1h0m0s
-  path: ./monitoring/configs/dashboards
+  path: ./monitoring/controllers
   prune: true
   sourceRef:
     kind: GitRepository
     name: monitoring-habibul
+  timeout: 2m0s
