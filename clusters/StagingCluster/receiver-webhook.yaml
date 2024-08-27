@@ -10,7 +10,7 @@ spec:
   - push
   resources:
   - kind: GitRepository
-    name: instavote
+    name: instavot
   secretRef:
     name: webhook-token
   type: github
